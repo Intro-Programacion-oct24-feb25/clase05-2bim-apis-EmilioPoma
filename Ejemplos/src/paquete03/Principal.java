@@ -8,6 +8,10 @@ package paquete03;
 import paquete04.OperadorUno;
 import paquete04.OperadorDos;
 import paquete05.OperadorTres;
+import paquete06.Imprimir; /* Importo la Clase Imprimir del Paquete06 
+el cual contiene un procdemiento que recibe 4 parametros, los valores y 
+el resultado de las operaciones.
+*/
 
 // import paquete04.*;
 /**
@@ -22,11 +26,6 @@ public class Principal {
         int suma = OperadorDos.obtenerSuma(valorA, valorB);
         int multiplicacion = OperadorTres.obtenerMultiplicacion(valorA, 
                                                                 valorB);
-        System.out.printf("La suma de %d + %d es igual a: %d\n"
-                + "La multiplicacion de %d * %d es igual a: %d\n",
-                valorA,valorB,
-                suma,
-                valorA, valorB,
-                multiplicacion);
+        Imprimir.imprimirMensaje(valorA, valorB, suma, multiplicacion);
     }
 }
