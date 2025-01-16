@@ -10,6 +10,8 @@ import java.security.SecureRandom;
 
 public class Operador {
     
+    
+    
     public static int obtenerNumero() {
         // objeto generador de números aleatorios
         SecureRandom numerosAleatorios = new SecureRandom();
@@ -22,6 +24,13 @@ public class Operador {
     
     public static int obtenerSuma(int a, int b){
         return a + b;
+    }
+    
+    public static void presentarDatos(int a, int b, int c){
+        System.out.printf("La suma de %d + %d es igual a: %d\n", 
+                a,
+                b,
+                c);
     }
     
 }
